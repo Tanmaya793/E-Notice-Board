@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(backreg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+.container {
+    background-color: #d6cd8b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2); 
+    width: 100%;
+    transition: box-shadow 0.3s ease; 
+    max-width: 900px;
+    margin-bottom: 30px;
+}
+
+.container:hover {
+    box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.6);
+}
+
+.main-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 100px;
+}
+
+h2 {
+    
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-style: initial ;
+    cursor: pointer;
+    font-size: xx-large;
+    font-weight: bolder;
+    background-image: url(lead.jpg);
+    color: transparent;
+    background-clip: text;
+}
+
+.input-group {
+    padding: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius : 17px;
+}
+
+a, a:hover, a:active, a:visited { color: white; }
+
+
+.button-container  {
+    display: flex; 
+    justify-content: center; 
+    margin-top: 20px; 
+    border-left: 5px ; 
+    border-right: 5px ; 
+    border-radius: 4px; 
+    text-align: center;
+}
+
+button {
+    width: 130px; 
+    padding: 10px;
+    background-color: #7a97ecda;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 0 10px; 
+    margin-right: 0px;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
+    background-color: #343a40;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.header-strip {
+    background-color: #343a40;
+    height: 60px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+button:hover {
+    background-color: #4cae4c; 
+    transform: scale(1.05); 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+button:hover {
+    background-color: #4cae4c !important;
+    transform: scale(1.05);
+}
+
+
+
+.message {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.message a {
+    color: #5cb85c;
+    text-decoration: none;
+}
+
+.message a:hover {
+    text-decoration: underline;
+}
+.input-text{
+font-size: 20px;
+}
+.form-group {
+    margin-bottom: 15px;
+}

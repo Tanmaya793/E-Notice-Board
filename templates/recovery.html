@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Reset and Recovery</title>
+    <link href="{{ url_for('static', filename='recovery.css') }}" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+          <div class="left-panel">
+        </div>
+          <div class="button-group">
+            <button id="loginBtn">Back to login page</button>
+            <script>
+                document.getElementById("loginBtn").addEventListener("click", function () {
+                window.location.href = "{{ url_for('login_page') }}";
+                });
+            </script>
+            <button id="home">Logout</button>
+            <script>
+              document.getElementById("home").addEventListener("click", function () {
+                window.location.href = "{{ url_for('home') }}";
+              });
+            </script>
+          </div>
+        </div>
+        <div class="main-content">
+            <h2>Reset your password</h2>
+            <form id="recovery-form" action="/recover" method="POST">
+              <label for="recovery-email">Enter your email address:</label>
+              <input type="email" id="recovery-email" name="recovery-email" value="{{ email if email else '' }}" required>
+              
+              <label for="recovery-pin">Enter Recovery PIN:</label>
+              <input type="text" id="recovery-pin" name="recovery-pin" required>
+              
+              <button type="submit"> Recover Password</button>
+          </form>
+          </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2025 University Notice Board. All Rights Reserved</p>
+      </footer>
+</body>
+
+</html>

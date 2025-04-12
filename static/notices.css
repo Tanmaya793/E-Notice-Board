@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+header {
+    background: #1e88e5;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    background: #1565c0;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+nav a:hover {
+    background: #0d47a1;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.notices, .notice-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.notices {
+    flex: 1;
+    min-width: 280px;
+}
+
+.notices h2 {
+    margin-top: 0;
+    color: #1e88e5;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.notice-card {
+    background-color: #f1f1f1;
+    border-radius: 6px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.notice-card:hover {
+    background-color: #e3f2fd;
+    transform: translateX(5px);
+}
+
+.notice-content {
+    flex: 2;
+    min-width: 300px;
+    display: none;
+}
+
+.notice-content h2 {
+    color: #1e88e5;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.notice-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+.notice-table th, .notice-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.notice-table th {
+    width: 30%;
+    background-color: #1e88e5;
+    color: white;
+    font-weight: 600;
+}
+
+.notice-table td {
+    background-color: #fafafa;
+}
+
+.notice-content table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.notice-content th, .notice-content td {
+    text-align: left;
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.notice-content th {
+    background-color: #1e88e5;
+    color: white;
+}
