@@ -6,6 +6,7 @@ colorama==0.4.6
 crypto==1.4.1
 Flask==3.1.0
 Flask-Mail==0.10.0
+gunicorn==23.0.0
 idna==3.10
 itsdangerous==2.2.0
 Jinja2==3.1.6
@@ -15,6 +16,7 @@ mysql-connector==2.2.9
 mysql-connector-python==9.2.0
 mysqlclient==2.2.7
 Naked==0.1.32
+packaging==24.2
 pycryptodome==3.22.0
 PyYAML==6.0.2
 requests==2.32.3
