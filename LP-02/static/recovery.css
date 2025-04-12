@@ -1,0 +1,130 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #d8b3b3, #9991a6);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    max-width: 95%;
+    background-color: #cae0de;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  .left-panel {
+    width: 35%;
+    background: linear-gradient(160deg, #7b2cbf, #9d4edd);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 20px;
+  }
+  
+  .top-button {
+    margin-bottom: auto;
+  }
+  
+  .button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: auto;
+  }
+  
+  .button-group button,
+  .top-button button {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .button-group button:hover,
+  .top-button button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .main-content {
+    width: 65%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .main-content h2 {
+    font-size: 26px;
+    color: #7b2cbf;
+    margin-bottom: 20px;
+  }
+  
+  .main-content label {
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    display: block;
+  }
+  
+  .main-content input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .main-content input:focus {
+    outline: none;
+    border-color: #7b2cbf;
+    box-shadow: 0 0 8px rgba(123, 44, 191, 0.2);
+  }
+  
+  .main-content button[type="submit"] {
+    background-color: #7b2cbf;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .main-content button[type="submit"]:hover {
+    background-color: #5a189a;
+    transform: scale(1.03);
+  }
+  
+  footer {
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background-color: #cae0de;
+    color: #333;
+    font-size: 14px;
+  }
+  
